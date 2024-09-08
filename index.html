@@ -5,10 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cloud Computing | Nabeel Sadiq</title>
     <link href="./src/output.css" rel="stylesheet" />
+    <!-- ! GSAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
       defer
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <!-- ! GSAP END -->
+    <!-- lenis  -->
+    <script
+      src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.1.13/dist/lenis.css"
+    />
+    <!-- lenis end  -->
     <script src="./src/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,17 +33,98 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-[hsl(60,5.88%,3.33%)]">
-    <section
-      id="hero"
-      class="flex h-screen items-center justify-center p-3 tracking-tight"
-    >
-      <h1
-        class="font-SUSE hero-h1-cloudcomputing text-center text-6xl font-bold text-[hsl(60,9.09%,78.43%)]"
+  <body class="bg-[#181818] font-SUSE text-[hsl(60,9.09%,78.43%)]">
+    <section class="flex h-screen items-center justify-center">
+      <div
+        onclick="box1click()"
+        id="box1"
+        class="flex aspect-square w-32 items-center justify-center bg-orange-200 text-5xl"
       >
-        Cloud Computing
-      </h1>
-
+        🤠
+      </div>
     </section>
+
+    <section class="flex h-screen items-center justify-center gap-1">
+      <div
+        class="box-animation-stagger flex aspect-square items-center justify-center text-5xl"
+      >
+        4️⃣
+      </div>
+      <div
+        class="box-animation-stagger flex aspect-square items-center justify-center text-5xl"
+      >
+        2️⃣
+      </div>
+      <div
+        class="box-animation-stagger flex aspect-square items-center justify-center text-5xl"
+      >
+        0️⃣
+      </div>
+    </section>
+
+    <section class="flex h-screen items-center justify-center">
+      <div class="flex flex-col items-center justify-center gap-4">
+        <h1 class="text-center text-6xl">Sohan is shit</h1>
+        <h1 class="text-center text-6xl">Sohan is braindead</h1>
+        <h1 class="text-center text-6xl">Sohan is stupid</h1>
+      </div>
+    </section>
+
+    <section class="flex flex-wrap items-center justify-center gap-8">
+      <div
+        class="staggered-boxes flex aspect-square w-32 cursor-pointer flex-col items-center justify-center rounded-md bg-gray-800 shadow-md shadow-black brightness-90 transition-transform hover:-translate-y-2"
+      >
+        <img
+          class="w-1/2"
+          src="./src/media/whatsapp.png"
+          alt="Socials"
+          draggable="false"
+        />
+      </div>
+
+      <div
+        class="staggered-boxes flex aspect-square w-32 cursor-pointer flex-col items-center justify-center rounded-md bg-gray-800 shadow-md shadow-black brightness-90 transition-transform hover:-translate-y-2"
+      >
+        <img
+          class="w-1/2"
+          src="./src/media/instagram.png"
+          alt="Socials"
+          draggable="false"
+        />
+      </div>
+
+      <div
+        class="staggered-boxes flex aspect-square w-32 cursor-pointer flex-col items-center justify-center rounded-md bg-gray-800 shadow-md shadow-black brightness-90 transition-transform hover:-translate-y-2"
+      >
+        <img
+          class="w-1/2"
+          src="./src/media/telegram.png"
+          alt="Socials"
+          draggable="false"
+        />
+      </div>
+
+      <div
+        class="staggered-boxes flex aspect-square w-32 cursor-pointer flex-col items-center justify-center rounded-md bg-gray-800 shadow-md shadow-black brightness-90 transition-transform hover:-translate-y-2"
+      >
+        <img
+          class="w-3/4"
+          src="./src/media/github.png"
+          alt="Socials"
+          draggable="false"
+        />
+      </div>
+    </section>
+    <section id="nabeel-section" class="flex h-screen flex-wrap items-center justify-center gap-8">
+      <div class="flex text-9xl ">
+        <span class="nabeel-span">N</span>
+        <span class="nabeel-span">a</span>
+        <span class="nabeel-span">b</span>
+        <span class="nabeel-span">e</span>
+        <span class="nabeel-span">e</span>
+        <span class="nabeel-span">l</span>
+      </div>
+    </section>
+    <footer class="h-28 w-full"></footer>
   </body>
 </html>
